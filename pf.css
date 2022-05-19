@@ -1,0 +1,432 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: black;
+    user-select: none;
+}
+body
+{
+    font-family: 'Roboto Mono', monospace;
+    padding-left: 30rem;
+    color: white;
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8rem 4rem;
+    background-color: orange;
+    border-right: 2px solid black;
+    width: 30rem;
+    
+}
+.logo
+{
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.navbar a
+{
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+.navbar a:hover
+{
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+.follow
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+#menu-bars
+{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 5px 8px;
+    font-size: 2rem;
+    background-color: orange;
+    cursor: pointer;
+    display: none;
+}
+
+/*
+.cursor-1
+{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: orange;
+    z-index: 10000;
+}
+.cursor-1.active
+{
+    height: 5rem;
+    width: 5rem;
+    opacity: .3;
+}
+.cursor-2
+{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    z-index: 10000;
+}
+.cursor-2.active
+{
+    display: none;    
+}
+*/
+section
+{
+    padding: 2rem 4rem;
+    min-height: 100vh;
+}
+.home
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.home .image
+{
+    flex: 1 1 40rem;
+}
+.home .image img
+{       
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+}
+.home .content
+{
+    flex: 1 1 40rem;
+}
+.content h2
+{
+    font-size: 1.5rem;
+    padding: 8px 0;
+}
+.content h1
+{
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding: 8px 0px;
+}
+.content h1 .name
+{
+    color: orange;
+}
+.content p
+{
+    font-size: 15px;
+    color: darkred;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.btn
+{
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: orange;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 20px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+.btn:hover
+{
+  border: none;
+}
+.boxcon
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17rem;
+}
+.box1
+{
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 1.8;
+}
+.box2
+{
+    margin-top: 40px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.coc
+{
+ max-width: 340px;
+}
+span
+{
+    color: darkorange;
+    font-weight: 900;
+}
+.title
+{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: darkorange;
+}
+.heading
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: darkorange;
+}
+.dr .btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bc
+{
+    width: 100px;   
+}
+.projects
+{
+    min-height: 60vh;
+}
+.wholebox
+{
+    margin-top: 50px;
+}
+
+.projects h1
+{
+    font-size: 20px;
+    text-align: center;
+}
+.box
+{
+    display: flex;
+    margin-top: 20px;
+}
+.abtpro
+{
+    max-width: 600px;
+    margin-left: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.resume
+{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hub
+{
+    color: royalblue;
+}
+.resp
+{
+    font-weight: bold;
+    color: darkblue;
+    font-size: 15px;
+}
+/*
+.contact .boxcont
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15rem;
+}
+.contact .boxcont .box
+{
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border: 1rem soild red;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+*/
+.contact .fin
+{
+    display: flex;
+    gap: 15rem;
+    margin-top: 50px;
+}
+.contact .fin .fin1
+{
+    text-align: center;
+    line-height: 1.8rem;
+    flex: 1 1 25rem;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 4px solid black;
+    box-shadow: 0 .5rem 1rem rgba(251, 255, 8, 0.7);
+}
+
+.fin1 h3
+{
+    margin-top: 10px;
+}
+.contact i
+{
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: white;
+    text-align-last: center;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.fin1 p
+{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.contact h1
+{
+    font-size: 25px;
+    text-align: center;
+}
+
+.fin1 .add
+{
+    max-width: 10px;
+}
+@media(max-width:992px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+    body
+    {
+        padding: 0;
+    }
+    html
+    {
+        font-size:55%;
+    }
+    #menu-bars
+    {
+        display: initial;
+    }
+    header
+    {
+        left: -120%;
+    }
+    header.active
+    {
+        left: 0px;
+    }
+  /*
+    .cursor-1,
+    .cursor-2
+    {
+        display: none;
+    }
+    */
+}
+
+@media(max-width:450px)
+{
+    html
+    {
+        font-size: 70%;
+        font-weight: bold;
+    }
+    header
+    {
+        width: 100%;
+    }
+    .box
+    {
+        display: block;
+    }   
+    .abtpro
+    {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .content .image img
+    {
+        width: 100%;
+    }
+    .contact .fin
+    {
+        display: block;
+    }
+    .fin1
+    {
+        margin-top: 20px;
+    }
+}
+@media(max-width:900px)
+{
+    .box
+    {
+        display: block;
+    }   
+    .abtpro
+    {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .contact .fin
+    {
+        display: block;
+    }
+    .fin1
+    {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
